@@ -12,7 +12,7 @@
 - 💬 Ask me about ...
 - 📫 How to reach me: ...
 - ⚡ Fun fact: There is no place like 127.0.0.1
--->
+--> 
 
 I'm Anand, a MERN stack Web Developer and Software Engineer at SIES GST, Nerul. 
 I specialize in crafting dynamic web applications using Node.js, MongoDB, and React. For deployment, I use AWS, Docker for containerization and Nginx as web server.
