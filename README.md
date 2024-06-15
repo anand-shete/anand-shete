@@ -15,6 +15,6 @@
 --> 
 
 I'm Anand, a MERN stack Web Developer and Software Engineer at SIES GST, Nerul. 
-I specialize in crafting dynamic web applications using Node.js, MongoDB, and React. For deployment, I use AWS, Docker for containerization and Nginx as web server.
-JEE 2022 - 88.14%ile
+I specialize in crafting dynamic web applications using React, Node and MongoDB as database. 
+For deployment, I prefer AWS, Docker for containerization and Nginx as web server.
 You can view my recent projects here. Feel free to connect with me to discuss new ideas!
