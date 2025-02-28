@@ -1,20 +1,32 @@
-## Hi there 👋
-
-<!--
-**anand-shete/anand-shete** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+# Hi there 👋
+I'm Anand, a <b>MERN</b> 💻 Stack Web Developer and an undergraduate 👨‍🎓 at Mumbai University.
 
 
+## Languages
+[![My Skills](https://skillicons.dev/icons?i=c,cpp,python,ts)](https://skillicons.dev)
+<br><br>
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- ⚡ Fun fact: There is no place like 127.0.0.1
---> 
 
-I'm Anand, a MERN stack Web Developer and Software Engineer at SIES GST, Nerul. 
-I specialize in crafting dynamic web applications using React, Node and MongoDB as database. 
-For deployment, I prefer AWS, Docker for containerization and Nginx as web server.
-You can view my recent projects here. Feel free to connect with me to discuss new ideas!
+## My Tech Stack
+
+### Front-end
+[![My Skills](https://skillicons.dev/icons?i=html,css,tailwind,js,react,redux)](https://skillicons.dev)
+
+### Back-End
+[![My Skills](https://skillicons.dev/icons?i=nodejs,ts,express,fastapi)](https://skillicons.dev)
+
+### Database
+[![My Skills](https://skillicons.dev/icons?i=mysql,mongodb)](https://skillicons.dev)
+
+### Libraries and Tools
+[![My Skills](https://skillicons.dev/icons?i=npm,git,github,docker,rabbitmq,postman)](https://skillicons.dev)
+
+### Deployment
+[![My Skills](https://skillicons.dev/icons?i=aws,vercel,netlify,nginx)](https://skillicons.dev)
+
+### Operating System Tools
+[![My Skills](https://skillicons.dev/icons?i=windows,linux,ubuntu,bash,vim)](https://skillicons.dev)
+
+
+👉 Check out my recent projects below.  
+🚀 Feel free to connect with me anytime!
