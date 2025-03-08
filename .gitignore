@@ -5,7 +5,8 @@ npm-debug.log*
 
 # Node.js dependencies
 node_modules/
-package-lock.json
+**/package-lock.json
+
 
 # Environment variables
 .env
