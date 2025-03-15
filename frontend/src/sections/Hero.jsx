@@ -27,7 +27,7 @@ export default function HeroSection() {
           </motion.span>
         ))}
       </motion.h1>
-      <p className="text-lg text-black text-center max-w-2xl">
+      <p className="text-lg text-black md:text-center max-w-2xl">
         Passionate MERN Stack Developer, Experienced in backend optimization,
         real-time WebSockets, and integrating AI into modern applications.
       </p>

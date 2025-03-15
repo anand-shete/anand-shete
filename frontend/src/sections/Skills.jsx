@@ -3,10 +3,10 @@ import { useState } from "react";
 
 export default function SkillsSection() {
   const languages = [
-    { icon: "ts", tooltip: "Typescript" },
     { icon: "c", tooltip: "C" },
     { icon: "cpp", tooltip: "C++" },
     { icon: "python", tooltip: "Python" },
+    { icon: "js", tooltip: "JavaScript" },
   ];
   const frontendIcons = [
     { icon: "html", tooltip: "HTML5" },
@@ -55,7 +55,7 @@ export default function SkillsSection() {
   };
 
   return (
-    <div className="min-h-1/2 bg-gray-300 flex flex-col justify-center items-center py-20 mt-40 border-t-2 overflow-hidden">
+    <div className="min-h-[50vh] bg-gray-300 flex flex-col justify-center items-center py-20 mt-40 border-t-2 overflow-hidden">
       <motion.h1
         className="text-5xl mb-16"
         initial="hidden"
