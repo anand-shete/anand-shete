@@ -7,7 +7,7 @@ import {
   Route,
   RouterProvider,
 } from "react-router";
-import { Home, Games, Contact } from "./pages";
+import { Home, Games, Contact, NotFound } from "./pages";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -15,12 +15,13 @@ const router = createBrowserRouter(
       <Route path="/" element={<Home />} />
       <Route path="/games" element={<Games />} />
       <Route path="/contact" element={<Contact />} />
-    </Route>
-  )
+      <Route path="*" element={<NotFound />} />
+    </Route>,
+  ),
 );
 
 createRoot(document.getElementById("root")).render(
-  // <StrictMode>
+  <StrictMode>
     <RouterProvider router={router} />
-  // </StrictMode>
+  </StrictMode>,
 );
