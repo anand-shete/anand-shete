@@ -1,5 +1,6 @@
 import { Download, Github, House, Send } from "lucide-react";
 import { NavLink } from "react-router";
+import resume from "@/assets/resume.pdf";
 
 export default function NavbarLinks() {
   return (
@@ -8,7 +9,7 @@ export default function NavbarLinks() {
         <House className="relative top-[1px] mr-[1px] h-5" />
         Home
       </NavLink>
-      <a href="/src/assets/resume.pdf" download="Anand_Shete_Resume.pdf">
+      <a href={resume} download="Anand_Shete_Resume.pdf">
         <Download className="relative top-[1px] mr-[1px] h-5" />
         Resume
       </a>

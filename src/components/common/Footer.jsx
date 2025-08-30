@@ -2,6 +2,9 @@ import { Button } from "@/components/ui/button";
 import { NavLink } from "react-router";
 import { motion } from "framer-motion";
 import { Github } from "lucide-react";
+import resume from "@/assets/resume.pdf";
+import linkedin from "@/assets/logos/linkedin.webp";
+import gmail from "@/assets/logos/gmail.svg";
 
 export default function Footer() {
   const MotionButton = motion.create(Button); // Create an animated version of the Button compoennts
@@ -34,7 +37,7 @@ export default function Footer() {
           }}
           whileHover={{ scale: 1.1 }}
         >
-          <a href="/src/assets/resume.pdf" download="Anand_Shete_Resume.pdf">
+          <a href={resume} download="Anand_Shete_Resume.pdf">
             Download Resume
           </a>
         </MotionButton>
@@ -53,7 +56,7 @@ export default function Footer() {
           target="_blank"
           className="mt-5 flex flex-row items-center space-x-2 rounded-md border-2 border-black transition-transform duration-200 hover:scale-110 hover:shadow-custom"
         >
-          <img src="./src/assets/logos/linkedin.webp" alt="linkedin" className="h-8 rounded-md" />
+          <img src={linkedin} alt="linkedin" className="h-8 rounded-md" />
           <p className="w-fit">LinkedIn</p>
         </NavLink>
         <NavLink
@@ -61,7 +64,7 @@ export default function Footer() {
           target="_blank"
           className="mt-5 flex flex-row items-center space-x-2 rounded-md border-2 border-black transition-transform duration-200 hover:scale-110 hover:shadow-custom"
         >
-          <img src="./src/assets/logos/gmail.svg" alt="gmail" className="h-6 rounded-sm bg-white" />
+          <img src={gmail} alt="gmail" className="h-6 rounded-sm bg-white" />
           <p>Mail</p>
         </NavLink>
       </div>

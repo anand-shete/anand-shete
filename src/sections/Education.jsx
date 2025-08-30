@@ -1,4 +1,7 @@
 import { motion, useTransform } from "motion/react";
+import school from "@/assets/logos/school.png";
+import college from "@/assets/logos/college.webp";
+import siesgst from "@/assets/logos/sies_gst.png";
 
 export default function EducationSection({ scrollYProgress }) {
   const sectionScroll = useTransform(scrollYProgress, [0.1, 0.3], [0, 1]);
@@ -20,7 +23,7 @@ export default function EducationSection({ scrollYProgress }) {
           initial={{ opacity: 0 }}
           style={{ opacity: sboaBoxOpacity }}
         >
-          <motion.img src="./src/assets/logos/school.png" alt="school_logo" className="h-20" />
+          <motion.img src={school} alt="school_logo" className="h-20" />
           <motion.p className="">
             <span className="hidden md:inline">SBOA Public School, Nerul </span>
             <br /> SSC: <span className="font-bold">83.80%</span>
@@ -31,7 +34,7 @@ export default function EducationSection({ scrollYProgress }) {
           initial={{ opacity: 0 }}
           style={{ opacity: xaviersBoxOpacity }}
         >
-          <motion.img src="./src/assets/logos/college.webp" alt="college_logo" className="h-20" />
+          <motion.img src={college} alt="college_logo" className="h-20" />
           <motion.p>
             <span className="hidden md:inline">St. Xavier's Juinor College</span>
             <br /> HSC: <span className="font-bold">81.00%</span> <br />
@@ -45,7 +48,7 @@ export default function EducationSection({ scrollYProgress }) {
           initial={{ opacity: 0 }}
           style={{ opacity: siesBoxOpacity }}
         >
-          <motion.img src="./src/assets/logos/sies_gst.png" alt="sies_gst_logo" className="h-20" />
+          <motion.img src={siesgst} alt="sies_gst_logo" className="h-20" />
           <motion.p>
             <span className="hidden md:inline">SIES Graduate School of Technology</span>
             <br /> <b> Mumbai University </b>

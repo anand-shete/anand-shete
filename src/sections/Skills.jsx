@@ -1,4 +1,11 @@
 import { motion } from "motion/react";
+import shadcn from "@/assets/logos/shadcn.png";
+import fastify from "@/assets/logos/fastify.svg";
+import zod from "@/assets/logos/zod.svg";
+import motionImg from "@/assets/logos/motion.png";
+import reactRouter from "@/assets/logos/react-router.svg";
+import render from "@/assets/logos/render.jpg";
+import terminal from "@/assets/logos/terminal.png";
 
 export default function SkillsSection() {
   const languages = [
@@ -78,7 +85,7 @@ export default function SkillsSection() {
             <motion.img
               src={`https://skillicons.dev/icons?i=${icon}`}
               alt={icon}
-              className="hover:scale-120 mx-1 h-16 cursor-pointer transition"
+              className="mx-1 h-16 cursor-pointer transition hover:scale-120"
             />
             <motion.span className="absolute bottom-full left-1/2 mb-2 -translate-x-1/2 transform rounded bg-slate-800 px-2 py-1 text-xs font-bold text-white opacity-0 transition group-hover:opacity-100">
               {tooltip}
@@ -102,7 +109,7 @@ export default function SkillsSection() {
             <img
               src={`https://skillicons.dev/icons?i=${icon}`}
               alt={icon}
-              className="hover:scale-120 mx-1 h-16 cursor-pointer transition"
+              className="mx-1 h-16 cursor-pointer transition hover:scale-120"
             />
             <span className="absolute bottom-full left-1/2 mb-2 -translate-x-1/2 transform rounded bg-slate-800 px-2 py-1 text-xs font-bold text-white opacity-0 transition group-hover:opacity-100">
               {tooltip}
@@ -117,7 +124,7 @@ export default function SkillsSection() {
           transition={{ duration: 0.4 }}
         >
           <img
-            src="./src/assets/logos/shadcn.png"
+            src={shadcn}
             alt="shadcn_logo"
             className="mx-1 max-h-16 cursor-pointer rounded-xl transition hover:scale-110"
           />
@@ -142,7 +149,7 @@ export default function SkillsSection() {
             <img
               src={`https://skillicons.dev/icons?i=${icon}`}
               alt={icon}
-              className="hover:scale-120 mx-1 h-16 cursor-pointer transition"
+              className="mx-1 h-16 cursor-pointer transition hover:scale-120"
             />
             <span className="absolute bottom-full left-1/2 mb-2 -translate-x-1/2 transform rounded bg-slate-800 px-2 py-1 text-xs font-bold text-white opacity-0 transition group-hover:opacity-100">
               {tooltip}
@@ -157,9 +164,9 @@ export default function SkillsSection() {
           transition={{ duration: 0.4 }}
         >
           <img
-            src="./src/assets/logos/fastify.svg"
+            src={fastify}
             alt="fastify_logo"
-            className="hover:scale-120 mx-1 h-16 cursor-pointer transition"
+            className="mx-1 h-16 cursor-pointer transition hover:scale-120"
           />
           <span className="absolute bottom-full left-1/2 -translate-x-1/2 transform rounded bg-slate-800 px-2 py-1 text-xs text-white opacity-0 transition group-hover:opacity-100">
             Fastify
@@ -173,9 +180,9 @@ export default function SkillsSection() {
           transition={{ duration: 0.4 }}
         >
           <img
-            src="./src/assets/logos/zod.svg"
+            src={zod}
             alt="zod_logo"
-            className="hover:scale-120 mx-1 h-16 cursor-pointer transition"
+            className="mx-1 h-16 cursor-pointer transition hover:scale-120"
           />
           <span className="absolute bottom-full left-1/2 -translate-x-1/2 transform rounded bg-slate-800 px-2 py-1 text-xs font-bold text-white opacity-0 transition group-hover:opacity-100">
             Zod
@@ -198,7 +205,7 @@ export default function SkillsSection() {
             <img
               src={`https://skillicons.dev/icons?i=${icon}`}
               alt={icon}
-              className="hover:scale-120 mx-1 h-16 cursor-pointer transition"
+              className="mx-1 h-16 cursor-pointer transition hover:scale-120"
             />
             <span className="absolute bottom-full left-1/2 mb-2 -translate-x-1/2 transform rounded bg-slate-800 px-2 py-1 text-xs font-bold text-white opacity-0 transition group-hover:opacity-100">
               {tooltip}
@@ -218,7 +225,7 @@ export default function SkillsSection() {
           transition={{ duration: 0.4 }}
         >
           <img
-            src="./src/assets/logos/motion.png"
+            src={motionImg}
             alt="motion_logo"
             className="mx-1 max-h-16 cursor-pointer rounded-full transition hover:scale-110"
           />
@@ -234,7 +241,7 @@ export default function SkillsSection() {
           transition={{ duration: 0.4 }}
         >
           <img
-            src="./src/assets/logos/react-router.svg"
+            src={reactRouter}
             alt="react-router_logo"
             className="mx-1 max-h-16 cursor-pointer rounded-xl border-2 border-black transition hover:scale-110"
           />
@@ -254,7 +261,7 @@ export default function SkillsSection() {
             <img
               src={`https://skillicons.dev/icons?i=${icon}`}
               alt={icon}
-              className="hover:scale-120 mx-1 h-16 cursor-pointer transition"
+              className="mx-1 h-16 cursor-pointer transition hover:scale-120"
             />
             <span className="absolute bottom-full left-1/2 mb-2 -translate-x-1/2 transform rounded bg-slate-800 px-2 py-1 text-xs font-bold text-white opacity-0 transition group-hover:opacity-100">
               {tooltip}
@@ -278,7 +285,7 @@ export default function SkillsSection() {
             <img
               src={`https://skillicons.dev/icons?i=${icon}`}
               alt={icon}
-              className="hover:scale-120 mx-1 h-16 cursor-pointer transition"
+              className="mx-1 h-16 cursor-pointer transition hover:scale-120"
             />
             <span className="absolute bottom-full left-1/2 mb-2 -translate-x-1/2 transform rounded bg-slate-800 px-2 py-1 text-xs font-bold text-white opacity-0 transition group-hover:opacity-100">
               {tooltip}
@@ -293,7 +300,7 @@ export default function SkillsSection() {
           transition={{ duration: 0.4 }}
         >
           <img
-            src="./src/assets/logos/render.jpg"
+            src={render}
             alt="render_logo"
             className="mx-1 max-h-16 cursor-pointer rounded-xl border-2 border-black transition hover:scale-110"
           />
@@ -314,7 +321,7 @@ export default function SkillsSection() {
           transition={{ duration: 0.4 }}
         >
           <img
-            src="./src/assets/logos/terminal.png"
+            src={terminal}
             alt="render_logo"
             className="mx-1 max-h-16 cursor-pointer rounded-xl border-2 border-black transition hover:scale-110"
           />
@@ -334,7 +341,7 @@ export default function SkillsSection() {
             <img
               src={`https://skillicons.dev/icons?i=${icon}`}
               alt={icon}
-              className="hover:scale-120 mx-1 h-16 cursor-pointer transition"
+              className="mx-1 h-16 cursor-pointer transition hover:scale-120"
             />
             <span className="absolute bottom-full left-1/2 mb-2 -translate-x-1/2 transform rounded bg-slate-800 px-2 py-1 text-xs font-bold text-white opacity-0 transition group-hover:opacity-100">
               {tooltip}

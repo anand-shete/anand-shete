@@ -3,6 +3,7 @@ import { motion } from "motion/react";
 import { Button } from "../ui/button";
 import NavbarMobile from "./NavbarMobile";
 import NavbarLinks from "./NavbarLinks";
+import logo from "@/assets/logos/logo.jpeg";
 
 export default function Navbar() {
   const navigate = useNavigate();
@@ -11,7 +12,7 @@ export default function Navbar() {
     <nav className="flex min-h-22 max-w-screen flex-row items-center justify-around bg-slate-800 text-white">
       <NavLink to="/">
         <motion.img
-          src="./src/assets/logos/logo.jpeg"
+          src={logo}
           alt="logo"
           className="h-20 min-w-20 rounded-full"
           initial={{ scale: 0 }}

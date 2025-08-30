@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Button } from "../ui/button";
 import { NavLink, useNavigate } from "react-router";
 import { Download, House, Send, Menu } from "lucide-react";
+import resume from "@/assets/resume.pdf";
 
 export default function NavbarMobile() {
   const navigate = useNavigate();
@@ -46,11 +47,7 @@ export default function NavbarMobile() {
             setIsOpen(false);
           }}
         >
-          <a
-            href="/src/assets/resume.pdf"
-            download="Anand_Shete_Resume.pdf"
-            className="flex px-80 py-2"
-          >
+          <a href={resume} download="Anand_Shete_Resume.pdf" className="flex px-80 py-2">
             <Download className="relative top-[2px] mr-1" />
             Resume
           </a>
