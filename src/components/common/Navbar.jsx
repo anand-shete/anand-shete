@@ -8,10 +8,10 @@ export default function Navbar() {
   const navigate = useNavigate();
 
   return (
-    <nav className="min-h-22 max-w-screen flex flex-row items-center justify-around bg-slate-800 text-white">
+    <nav className="flex min-h-22 max-w-screen flex-row items-center justify-around bg-slate-800 text-white">
       <NavLink to="/">
         <motion.img
-          src="/logos/logo.jpeg"
+          src="./src/assets/logos/logo.jpeg"
           alt="logo"
           className="h-20 min-w-20 rounded-full"
           initial={{ scale: 0 }}

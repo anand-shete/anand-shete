@@ -9,13 +9,32 @@ import {
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
-import { useEffect } from "react";
+import { useForm } from "@formspree/react";
+import { RefreshCw } from "lucide-react";
 
 export default function Form() {
-  useEffect(() => {
-    console.log("var", import.meta.env.VITE_FORMSUBMIT_ID);
-  });
+  const [state, handleSubmit, reset] = useForm("mblogeld");
 
+  if (state.submitting) {
+    return (
+      <Card className="max-w-screen h-[80vh] flex items-center justify-center p-6 md:p-10">
+        <RefreshCw className="h-10 w-10 animate-spin" />
+      </Card>
+    );
+  }
+
+  if (state.succeeded) {
+    return (
+      <div className="max-w-screen flex h-[80vh] items-center justify-center p-6 md:p-10">
+        <Card className="my-30 w-[60vw] text-center shadow-2xl hover:scale-103 transition-all">
+          <CardHeader>
+            Thank you for the message. I have received it and will respond to
+            you shortly!
+          </CardHeader>
+        </Card>
+      </div>
+    );
+  }
   return (
     <div className="max-w-screen flex items-center justify-center p-6 md:p-10">
       <Card className="my-30 w-[60vw] text-center shadow-2xl">
@@ -24,11 +43,7 @@ export default function Form() {
           <CardDescription>Enter your message below</CardDescription>
         </CardHeader>
         <CardContent>
-          <form
-            action={`https://formsubmit.co/${import.meta.env.VITE_FORMSUBMIT_ID}`}
-            method="POST"
-            className="space-y-5"
-          >
+          <form className="space-y-5" onSubmit={handleSubmit}>
             <div className="grid gap-2">
               <Label htmlFor="name">Name</Label>
               <Input
@@ -53,7 +68,9 @@ export default function Form() {
               <Label htmlFor="message">Message</Label>
               <Textarea id="message" name="message" />
             </div>
-            <Button type="submit">Send Message</Button>
+            <Button type="submit" disabled={state.submitting}>
+              Send Message
+            </Button>
           </form>
         </CardContent>
       </Card>

@@ -22,7 +22,7 @@ export default function ProjectsSection() {
       >
         Projects
       </motion.h1>
-      <div className="max-w-screen m-10 mb-20 grid min-h-fit grid-rows-3 gap-10 *:transition-all *:hover:scale-105 lg:row-span-1 lg:grid-cols-3 lg:grid-rows-1">
+      <div className="max-w-screen m-10 mb-20 grid min-h-fit grid-rows-3 gap-10 *:transition-all *:hover:scale-105 lg:row-span-1  lg:grid-rows-1">
         <Card>
           <CardHeader>
             <CardTitle className="text-2xl">

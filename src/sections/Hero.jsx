@@ -1,39 +1,21 @@
 import { motion } from "motion/react";
+import { FlipWords } from "@/components/ui/flip-words";
 
 export default function HeroSection() {
+  const words = ["Full Stack Developer.", "Backend Engineer.", "Problem Solver."];
+
   return (
-    <div className="max-w-screen -z-1 relative flex min-h-[70vh] flex-col items-center justify-center bg-[url(/bg.svg)] bg-cover text-white">
-      <div className="-z-2 absolute left-0 top-0 h-[70vh] w-full bg-black/50"></div>
-      <div className="">
-        <motion.h1
-          className="mb-10 text-5xl"
-          initial="hidden"
-          animate="visible"
-          variants={{
-            hidden: { opacity: 1 },
-            visible: {
-              opacity: 1,
-              transition: { staggerChildren: 0.1 },
-            },
-          }}
-        >
-          {"I'm a Full Stack Developer.".split("").map((char, index) => (
-            <motion.span
-              key={index}
-              variants={{
-                hidden: { opacity: 0 },
-                visible: { opacity: 1 },
-              }}
-            >
-              {char}
-            </motion.span>
-          ))}
-        </motion.h1>
-        <p className="max-w-2xl text-lg text-white md:text-center">
-          Passionate MERN Stack Developer, Experienced in backend optimization,
-          real-time WebSockets, and integrating AI into modern applications.
-        </p>
+    <div className="relative -z-1 flex min-h-[70vh] max-w-screen flex-col items-center justify-center bg-[url(/src/assets/bg.svg)] bg-cover text-white">
+      <div className="absolute top-0 left-0 -z-2 h-[70vh] w-full bg-black/50"></div>
+      <h1 className="text-left text-3xl font-bold md:text-5xl">Anand Shete.</h1>
+      <div className="mt-4 mb-8 text-center text-xl md:text-3xl">
+        I'm a
+        <FlipWords words={words} className="text-white" /> <br />
       </div>
+      <p className="max-w-2xl text-center text-sm text-white md:text-lg">
+        Backend Developer specializing in scalable systems, distributed architecture, and
+        high-performance APIs.
+      </p>
     </div>
   );
 }

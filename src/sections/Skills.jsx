@@ -117,7 +117,7 @@ export default function SkillsSection() {
           transition={{ duration: 0.4 }}
         >
           <img
-            src="/logos/shadcn.png"
+            src="./src/assets/logos/shadcn.png"
             alt="shadcn_logo"
             className="mx-1 max-h-16 cursor-pointer rounded-xl transition hover:scale-110"
           />
@@ -157,7 +157,7 @@ export default function SkillsSection() {
           transition={{ duration: 0.4 }}
         >
           <img
-            src="/logos/fastify.svg"
+            src="./src/assets/logos/fastify.svg"
             alt="fastify_logo"
             className="hover:scale-120 mx-1 h-16 cursor-pointer transition"
           />
@@ -173,7 +173,7 @@ export default function SkillsSection() {
           transition={{ duration: 0.4 }}
         >
           <img
-            src="/logos/zod.svg"
+            src="./src/assets/logos/zod.svg"
             alt="zod_logo"
             className="hover:scale-120 mx-1 h-16 cursor-pointer transition"
           />
@@ -218,7 +218,7 @@ export default function SkillsSection() {
           transition={{ duration: 0.4 }}
         >
           <img
-            src="/logos/motion.png"
+            src="./src/assets/logos/motion.png"
             alt="motion_logo"
             className="mx-1 max-h-16 cursor-pointer rounded-full transition hover:scale-110"
           />
@@ -234,7 +234,7 @@ export default function SkillsSection() {
           transition={{ duration: 0.4 }}
         >
           <img
-            src="/logos/react-router.svg"
+            src="./src/assets/logos/react-router.svg"
             alt="react-router_logo"
             className="mx-1 max-h-16 cursor-pointer rounded-xl border-2 border-black transition hover:scale-110"
           />
@@ -293,7 +293,7 @@ export default function SkillsSection() {
           transition={{ duration: 0.4 }}
         >
           <img
-            src="/logos/render.jpg"
+            src="./src/assets/logos/render.jpg"
             alt="render_logo"
             className="mx-1 max-h-16 cursor-pointer rounded-xl border-2 border-black transition hover:scale-110"
           />
@@ -314,7 +314,7 @@ export default function SkillsSection() {
           transition={{ duration: 0.4 }}
         >
           <img
-            src="/logos/terminal.png"
+            src="./src/assets/logos/terminal.png"
             alt="render_logo"
             className="mx-1 max-h-16 cursor-pointer rounded-xl border-2 border-black transition hover:scale-110"
           />

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Button } from "../ui/button";
 import { NavLink, useNavigate } from "react-router";
-import { Download, House, Send } from "lucide-react";
+import { Download, House, Send, Menu } from "lucide-react";
 
 export default function NavbarMobile() {
   const navigate = useNavigate();
@@ -15,10 +15,10 @@ export default function NavbarMobile() {
         className={`${isOpen ? "opacity-0" : "opacity-100"} h-10 w-10 p-1`}
         onClick={() => setIsOpen(!isOpen)}
       >
-        <img src="/logos/burger.svg" alt="hamburger-logo" />
+        <Menu strokeWidth={2} />
       </Button>
       <div
-        className={`duration-400 fixed left-0 top-0 flex w-screen flex-col justify-center bg-slate-800 text-center transition-transform *:m-3 *:rounded-md *:py-2 ${
+        className={`fixed top-0 left-0 flex w-screen flex-col justify-center bg-slate-800 text-center transition-transform duration-400 *:m-3 *:rounded-md *:py-2 ${
           isOpen ? "translate-y-0" : "-translate-y-50"
         } `}
       >
@@ -47,7 +47,7 @@ export default function NavbarMobile() {
           }}
         >
           <a
-            href="/resume.pdf"
+            href="/src/assets/resume.pdf"
             download="Anand_Shete_Resume.pdf"
             className="flex px-80 py-2"
           >
