@@ -25,7 +25,7 @@ export default function SkillsSection() {
   const backendIcons = [
     { icon: "nodejs", tooltip: "Node.js" },
     { icon: "express", tooltip: "Express.js" },
-    { icon: "fastapi", tooltip: "FastAPI" },
+    { icon: "flask", tooltip: "Flask" },
   ];
   const dbIcons = [
     { icon: "mongodb", tooltip: "MongoDB" },
@@ -215,8 +215,27 @@ export default function SkillsSection() {
       </div>
 
       {/* Libraries and Tools */}
-      <h1 className="mb-3 text-3xl">Libraries and Tools</h1>
+      <h1 className="mb-3 text-3xl">Tools and Libraries</h1>
       <div className="mb-10 flex flex-row items-center justify-center space-x-3">
+        {tools.map(({ icon, tooltip }) => (
+          <motion.div
+            key={icon}
+            className="group relative"
+            initial={{ scale: 0 }}
+            whileInView={{ scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.4 }}
+          >
+            <img
+              src={`https://skillicons.dev/icons?i=${icon}`}
+              alt={icon}
+              className="mx-1 h-16 cursor-pointer transition hover:scale-120"
+            />
+            <span className="absolute bottom-full left-1/2 mb-2 -translate-x-1/2 transform rounded bg-slate-800 px-2 py-1 text-xs font-bold text-white opacity-0 transition group-hover:opacity-100">
+              {tooltip}
+            </span>
+          </motion.div>
+        ))}
         <motion.div
           className="group relative"
           initial={{ scale: 0 }}
@@ -249,25 +268,6 @@ export default function SkillsSection() {
             React Router
           </span>
         </motion.div>
-        {tools.map(({ icon, tooltip }) => (
-          <motion.div
-            key={icon}
-            className="group relative"
-            initial={{ scale: 0 }}
-            whileInView={{ scale: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.4 }}
-          >
-            <img
-              src={`https://skillicons.dev/icons?i=${icon}`}
-              alt={icon}
-              className="mx-1 h-16 cursor-pointer transition hover:scale-120"
-            />
-            <span className="absolute bottom-full left-1/2 mb-2 -translate-x-1/2 transform rounded bg-slate-800 px-2 py-1 text-xs font-bold text-white opacity-0 transition group-hover:opacity-100">
-              {tooltip}
-            </span>
-          </motion.div>
-        ))}
       </div>
 
       {/* Deployment */}

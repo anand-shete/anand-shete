@@ -10,7 +10,7 @@ export default function HeroSection() {
       <h1 className="text-left text-3xl font-bold md:text-5xl">Anand Shete.</h1>
       <div className="mt-4 mb-8 text-center text-xl md:text-3xl">
         I'm a
-        <FlipWords words={words} className="text-white" /> <br />
+        <FlipWords words={words} duration={2000} className="text-white" /> <br />
       </div>
       <p className="max-w-2xl text-center text-sm text-white md:text-lg">
         Backend Developer specializing in scalable systems, distributed architecture, and

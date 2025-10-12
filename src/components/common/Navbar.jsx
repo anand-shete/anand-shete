@@ -3,14 +3,14 @@ import { motion } from "motion/react";
 import { Button } from "../ui/button";
 import NavbarMobile from "./NavbarMobile";
 import NavbarLinks from "./NavbarLinks";
-import logo from "@/assets/logos/logo.jpeg";
+import logo from "@/assets/favicon.png";
 
 export default function Navbar() {
   const navigate = useNavigate();
 
   return (
     <nav className="flex min-h-22 max-w-screen flex-row items-center justify-around bg-slate-800 text-white">
-      <NavLink to="/">
+      <NavLink to="https://www.linkedin.com/in/anand-shete/" target="_blank">
         <motion.img
           src={logo}
           alt="logo"

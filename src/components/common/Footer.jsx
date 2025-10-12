@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { NavLink } from "react-router";
 import { motion } from "framer-motion";
 import { Github } from "lucide-react";
-import resume from "@/assets/resume.pdf";
+import resume from "/resume.pdf";
 import linkedin from "@/assets/logos/linkedin.webp";
 import gmail from "@/assets/logos/gmail.svg";
 

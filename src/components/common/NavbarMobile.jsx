@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Button } from "../ui/button";
 import { NavLink, useNavigate } from "react-router";
 import { Download, House, Send, Menu } from "lucide-react";
-import resume from "@/assets/resume.pdf";
+import resume from "/resume.pdf";
 
 export default function NavbarMobile() {
   const navigate = useNavigate();
