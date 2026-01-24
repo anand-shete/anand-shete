@@ -1,30 +1,30 @@
 # Hi there 👋
-I'm Anand, a <b>MERN</b> 💻 Stack Web Developer and an undergraduate 👨‍🎓 at Mumbai University.
+I'm Anand, a <b>Full Stack Web Developer </b>.  
+- Checkout my [Portfolio](https://www.anandshete.dev).
+- Follow me on [LinkedIn](https://www.linkedin.com/in/anand-shete).
 
+## Tech Stack
 
-## Languages
+### Languages
 [![My Skills](https://skillicons.dev/icons?i=c,cpp,python,ts)](https://skillicons.dev)
-<br><br>
 
 
-## My Tech Stack
-
-### Front-end
+### Front-End
 [![My Skills](https://skillicons.dev/icons?i=html,css,tailwind,js,react,redux)](https://skillicons.dev)
 
 ### Back-End
 [![My Skills](https://skillicons.dev/icons?i=nodejs,ts,express,fastapi)](https://skillicons.dev)
 
-### Database
-[![My Skills](https://skillicons.dev/icons?i=mysql,mongodb)](https://skillicons.dev)
+### Database and ORMs
+[![My Skills](https://skillicons.dev/icons?i=mongodb,postgres,prisma)](https://skillicons.dev)
 
 ### Libraries and Tools
-[![My Skills](https://skillicons.dev/icons?i=npm,git,github,docker,rabbitmq,postman)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=npm,git,postman,rabbitmq,github,docker)](https://skillicons.dev)
 
 ### Deployment
-[![My Skills](https://skillicons.dev/icons?i=aws,vercel,netlify,nginx)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=aws,gcp,vercel,nginx)](https://skillicons.dev)
 
-### Operating System Tools
+### Operating System
 [![My Skills](https://skillicons.dev/icons?i=windows,linux,ubuntu,bash,vim)](https://skillicons.dev)
 
 
