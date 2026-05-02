@@ -1,0 +1,12 @@
+export { default as change_networks } from "./experience/change_networks.jpg";
+export { default as gmail } from "./footer/gmail.svg";
+export { default as linkedin } from "./footer/linkedin.webp";
+export { default as blogify } from "./projects/blogify.png";
+export { default as metaverse } from "./projects/metaverse.png";
+export { default as fastify } from "./skills/fastify.svg";
+export { default as mongoose } from "./skills/mongoose.png";
+export { default as motionLogo } from "./skills/motion.png";
+export { default as react_router } from "./skills/react-router.svg";
+export { default as shadcn } from "./skills/shadcn.png";
+export { default as terminal } from "./skills/terminal.png";
+export { default as zod } from "./skills/zod.svg";
