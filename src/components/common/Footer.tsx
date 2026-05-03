@@ -9,11 +9,20 @@ export default function Footer() {
   const MotionButton = motion.create(Button); // Create an animated version of the Button compoennts
 
   return (
-    <div className="flex min-h-55 max-w-screen flex-row items-center justify-evenly overflow-hidden border-t-2 bg-slate-800 text-white">
-      <div className="hidden flex-col items-center justify-center space-y-5 sm:flex">
+    <div className="flex min-h-55 max-w-screen flex-row items-center justify-evenly overflow-hidden border-t-2 bg-slate-900 text-white">
+      <div className="hidden flex-col space-y-2 sm:flex">
+        <NavLink
+          to="https://www.linkedin.com/in/anand-shete/"
+          target="_blank"
+          rel="noopener no-refferrer"
+          referrerPolicy="no-referrer"
+          className="mb-10 text-2xl font-bold transition-transform duration-200"
+        >
+          Anand Shete
+        </NavLink>
         <NavLink
           to="/contact"
-          className="text-xl underline-offset-4 transition-transform duration-200 hover:scale-120 hover:underline hover:shadow-2xl"
+          className="text-base underline-offset-4 transition-transform duration-200 hover:underline"
         >
           Contact Me
         </NavLink>
@@ -21,7 +30,7 @@ export default function Footer() {
           to="https://github.com/anand-shete"
           target="_blank"
           referrerPolicy="no-referrer"
-          className="text-xl underline-offset-4 transition-transform duration-200 hover:scale-110 hover:underline hover:shadow-2xl"
+          className="text-base underline-offset-4 transition-transform duration-200 hover:underline"
         >
           View More Projects
         </NavLink>

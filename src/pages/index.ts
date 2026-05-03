@@ -1,6 +1,9 @@
-import Home from "./Home";
-import Games from "./Games";
-import Contact from "./Contact me";
-import NotFound from "./NotFound";
+import { lazy } from "react";
 
-export { Home, Games, Contact, NotFound };
+const Home = lazy(() => import("./Home"));
+const Games = lazy(() => import("./Games"));
+const Contact = lazy(() => import("./Contact me"));
+const NotFound = lazy(() => import("./NotFound"));
+const Layout = lazy(() => import("./Layout"));
+
+export { Home, Games, Contact, Layout, NotFound };

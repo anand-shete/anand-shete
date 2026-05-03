@@ -3,7 +3,7 @@ import { ContactForm } from "@/sections";
 
 export default function Contact() {
   return (
-    <div>
+    <div className="mt-22">
       <SmoothScroll />
       <Navbar />
       <ContactForm />

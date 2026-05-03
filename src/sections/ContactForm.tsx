@@ -7,7 +7,7 @@ import { useForm } from "@formspree/react";
 import { RefreshCw } from "lucide-react";
 
 export default function ContactForm() {
-  const [state, handleSubmit, reset] = useForm("mblogeld");
+  const [state, handleSubmit] = useForm("mblogeld");
 
   if (state.submitting) {
     return (

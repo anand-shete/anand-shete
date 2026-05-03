@@ -8,5 +8,3 @@ export { default as mongoose } from "./skills/mongoose.png";
 export { default as motionLogo } from "./skills/motion.png";
 export { default as react_router } from "./skills/react-router.svg";
 export { default as shadcn } from "./skills/shadcn.png";
-export { default as terminal } from "./skills/terminal.png";
-export { default as zod } from "./skills/zod.svg";

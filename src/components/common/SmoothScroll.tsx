@@ -8,8 +8,7 @@ const SmoothScroll = () => {
 
   // Scrolls to top on route change
   // prevent it to scroll to top on intial render by setting immediate: true
-  //  fixme add full screen loader
-  
+
   useEffect(() => {
     lenis?.scrollTo(0, { immediate: true });
   }, [pathname, lenis]);

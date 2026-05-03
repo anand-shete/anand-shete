@@ -1,4 +1,3 @@
-import React from "react";
 import { Timeline } from "@/components/external/timeline";
 import { change_networks } from "@/assets";
 import { Link } from "react-router";
@@ -12,7 +11,7 @@ export default function ExperienceSection() {
       link: "https://www.change-networks.com",
       content: (
         <div className="grid gap-4">
-          <h1 className="text-2xl font-semibold">Backend Engineer</h1>
+          <h1 className="text-xl tracking-tight md:text-2xl">Backend Engineer</h1>
           <ul className="list-disc">
             <li>
               Built a production ready <b>Email Matrix system</b> which captures email and other
@@ -31,8 +30,8 @@ export default function ExperienceSection() {
           </ul>
           <img
             src={change_networks}
-            alt="startup template"
-            className="mx-auto w-3/4 rounded-lg object-cover shadow-[0_0_24px_rgba(34,42,53,0.06),0_1px_1px_rgba(0,0,0,0.05),0_0_0_1px_rgba(34,42,53,0.04),0_0_4px_rgba(34,42,53,0.08),0_16px_68px_rgba(47,48,55,0.05),0_1px_0_rgba(255,255,255,0.1)_inset]"
+            alt="change networks offer letter"
+            className="mx-auto mb-10 w-3/4 rounded-lg object-cover shadow-2xl"
           />
         </div>
       ),
@@ -42,11 +41,14 @@ export default function ExperienceSection() {
       name: "Sixnine Galaxies Ltd.",
       link: "https://www.linkedin.com/company/spinxclub/",
       content: (
-        <div>
-          <h1 className="mt-20 text-2xl font-semibold">Backend Developer (Confidential)</h1>
+        <div className="mb-10">
+          <h1 className="text-xl tracking-tight md:text-2xl">
+            Backend Developer
+            <span className="text-base tracking-normal text-slate-800"> (Confidential)</span>
+          </h1>
           <ul className="list-disc pt-4">
             <li>
-              Builts a high-concurrency, real-time <b>gaming platform</b> focused on financial
+              Built a high-concurrency, real-time <b>gaming platform</b> focused on financial
               integrity and low-latency performance.
             </li>
             <li>
@@ -70,15 +72,10 @@ export default function ExperienceSection() {
               environment for active players.
             </li>
             <li>
-              Accomplished a high-concurrency architecture capable of handling intense spikes in
-              traffic by implementing Fastify and asynchronous request handling, which led to zero
-              performance degradation during high-user-load events.
-            </li>
-            <li>
               Ensured high data integrity and security for gameplay transactions by implementing
-              <b> Decimal.js</b> for high-precision financial calculations, and IP-based session
-              tracking, which led to 100% mathematical accuracy in <b>payout system</b> and a more
-              secure, personalized user experience.
+              Decimal.js for high-precision financial calculations, and{" "}
+              <b>IP-based session tracking</b>, which led to <b>100% mathematical accuracy</b> in{" "}
+              <b>payout system</b> and a more secure, personalized user experience.
             </li>
           </ul>
         </div>
@@ -90,15 +87,21 @@ export default function ExperienceSection() {
       link: "https://www.vikasindustrialhub.com",
       content: (
         <div>
-          <Link to="https://vikasindustrialhub.com" className="mt-20 mb-4 flex hover:underline">
-            <h1 className="inline text-2xl font-semibold">Vikas Industrial Hub</h1>
+          <Link
+            to="https://vikasindustrialhub.com"
+            target="_blank"
+            rel="noopener"
+            referrerPolicy="no-referrer"
+            className="mb-4 flex hover:underline"
+          >
+            <h1 className="inline text-xl font-semibold md:text-2xl">Vikas Industrial Hub</h1>
             <ExternalLink className="mt-1 ml-2" size={18} />
           </Link>
           <ul className="list-disc">
             <li>
-              Accomplished a 100% production-ready launch within 2 months by implementing a
-              streamlined React and Tailwind CSS architecture deployed on Vercel, which led to a
-              significant increase in digital visibility for the client’s industrial portfolio.
+              Achieved a 100% production-ready launch within 2 months by implementing a streamlined
+              React and Tailwind CSS architecture deployed on Vercel, which led to a significant
+              increase in digital visibility for the client’s industrial portfolio.
             </li>
             <li>
               Accomplished high client satisfaction and alignment by conducting weekly stakeholder
@@ -107,10 +110,10 @@ export default function ExperienceSection() {
               vision.
             </li>
             <li>
-              Accomplished a zero-overhead lead generation system by implementing
-              <b> Formspree integration</b> for secure inquiry handling, which led to 100% form
-              reliability and streamlined communication between potential customers and the
-              business.
+              Implemented a zero-overhead lead generation system using
+              <b> Formspree integration </b>
+              for secure inquiry handling, which led to 100% form reliability and streamlined
+              communication between potential customers and the business.
             </li>
             <li>
               Accomplished a professional, high-performance user experience by implementing
@@ -118,7 +121,6 @@ export default function ExperienceSection() {
               page load times and a consistent brand presence across all device types.
             </li>
           </ul>
-          {/* FIXME fix shoogle and add here */}
         </div>
       ),
     },

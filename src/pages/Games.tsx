@@ -6,9 +6,9 @@ export default function Games() {
     <>
       <SmoothScroll />
       <Navbar />
-      <div className="h-screen max-w-screen flex flex-row justify-center items-center">
+      <div className="flex h-screen max-w-screen flex-row items-center justify-center">
         <motion.h1
-          className="text-6xl text-center"
+          className="text-center text-6xl"
           initial="hidden"
           animate="show"
           variants={{
