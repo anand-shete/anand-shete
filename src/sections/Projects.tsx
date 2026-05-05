@@ -15,7 +15,7 @@ export default function ProjectsSection({ width }: Props) {
       className="mt-20 flex flex-col items-center justify-center overflow-hidden border-t-2 border-b-2 border-slate-400 bg-slate-100 pb-20 [&_b]:font-semibold [&_li]:text-justify [&_li]:text-sm [&_li]:leading-7 [&_ul]:max-w-xl [&>li]:my-2 [&>li]:text-neutral-800"
       id="projects"
     >
-      <div className="mt-20 mb-10 flex flex-row items-center space-x-3 text-slate-800">
+      <div className="mt-20 mb-10 flex flex-row items-center space-x-3 *:text-slate-800">
         <BriefcaseBusiness />
         <TextType
           text={["Projects", "Engineering Work", "Systems Built"]}

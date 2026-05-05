@@ -1,6 +1,6 @@
 import { FlipWords } from "@/components/external/flip-words";
-import anand from "@/assets/profile.png";
 import TiltedCard from "@/components/external/TiltedCard";
+import { profile } from "@/assets";
 
 interface Props {
   width: number;
@@ -13,7 +13,7 @@ export default function HeroSection({ width }: Props) {
     <div className="relative z-1 mt-22 flex w-full flex-col items-center justify-center border-b-2 border-slate-700 bg-[url(/src/assets/hero/bg.svg)] bg-cover px-6 shadow-xl shadow-slate-400 md:flex-row md:space-x-30 md:p-12">
       <div className="absolute inset-0 -z-2 w-full bg-black/50"></div>
       <TiltedCard
-        imageSrc={anand}
+        imageSrc={profile}
         altText="Anand Shete"
         captionText="Anand Shete"
         containerHeight="60vh"

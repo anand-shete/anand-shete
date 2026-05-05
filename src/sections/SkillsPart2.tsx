@@ -1,5 +1,3 @@
-import { motionLogo, react_router } from "@/assets/index";
-
 const SkillsPart2 = () => {
   const tools = [
     { icon: "git", tooltip: "Git" },
@@ -22,8 +20,8 @@ const SkillsPart2 = () => {
   ];
   return (
     <div className="[&_img]:mx-1 [&_img]:h-16 [&_img]:transition [&_img]:hover:scale-120 [&_span]:absolute [&_span]:bottom-full [&_span]:left-1/2 [&_span]:mb-2 [&_span]:-translate-x-1/2 [&_span]:transform [&_span]:rounded [&_span]:bg-slate-800 [&_span]:px-2 [&_span]:py-1 [&_span]:text-xs [&_span]:font-bold [&_span]:text-white [&_span]:opacity-0 [&_span]:transition [&_span]:group-hover:opacity-100 [&>div]:mb-10 [&>div]:flex [&>div]:flex-row [&>div]:items-center [&>div]:space-x-3 [&>h1]:mb-3 [&>h1]:text-2xl [&>h1]:leading-6 [&>h1]:font-semibold">
-      {/* Libraries and Tools */}
-      <h1>Tools and Libraries</h1>
+      {/* Tools */}
+      <h1>Tools</h1>
       <div>
         {tools.map(({ icon, tooltip }) => (
           <div key={icon} className="group relative">
@@ -31,18 +29,6 @@ const SkillsPart2 = () => {
             <span>{tooltip}</span>
           </div>
         ))}
-        <div className="group relative">
-          <img
-            src={react_router}
-            alt="react-router_logo"
-            className="rounded-2xl border border-slate-400 p-1"
-          />
-          <span>React Router</span>
-        </div>
-        <div className="group relative">
-          <img src={motionLogo} alt="motion_logo" className="rounded-full" />
-          <span>Motion</span>
-        </div>
       </div>
       {/* Deployment */}
       <h1>Deployment</h1>

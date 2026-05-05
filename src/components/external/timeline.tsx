@@ -32,7 +32,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
   return (
     <div className="w-full bg-white md:px-10 dark:bg-neutral-950" ref={containerRef}>
       <div className="px-4 pt-20 md:px-8 lg:px-10">
-        <div className="flex items-center justify-center space-x-2 text-center text-2xl font-bold text-slate-600 sm:text-3xl md:text-4xl">
+        <div className="flex items-center justify-center space-x-2 text-center text-2xl font-bold text-slate-800 sm:text-3xl md:text-4xl">
           <History size={30} />
           <span>Experience</span>
         </div>

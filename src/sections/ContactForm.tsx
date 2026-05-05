@@ -29,12 +29,13 @@ export default function ContactForm() {
     );
   }
   return (
-    <div className="flex max-w-screen items-center justify-center p-6 md:p-10">
-      <Card className="my-20 w-[60vw] text-center shadow-2xl">
-        <CardHeader>
-          <CardTitle className="text-2xl">Contact Me</CardTitle>
-          <CardDescription>Enter your message below</CardDescription>
-        </CardHeader>
+    <div className="flex max-w-screen flex-col items-center justify-center p-6 md:p-10">
+      <h1 className="text-2xl font-bold text-slate-800">Contact Me</h1>
+      <p className="text-sm text-slate-600">
+        Have a project in mind or just want to say hi? Feel free to drop a message!
+      </p>
+      <Card className="mt-10 mb-20 w-[60vw] text-left shadow-lg">
+        <CardHeader></CardHeader>
         <CardContent>
           <form className="space-y-5" onSubmit={handleSubmit}>
             <div className="grid gap-2">
@@ -53,7 +54,12 @@ export default function ContactForm() {
             </div>
             <div className="grid gap-2">
               <Label htmlFor="message">Message</Label>
-              <Textarea id="message" name="message" />
+              <Textarea
+                id="message"
+                name="message"
+                className="pb-20"
+                placeholder="Your message..."
+              />
             </div>
             <Button type="submit" disabled={state.submitting}>
               Send Message

@@ -1,4 +1,4 @@
-import { shadcn, fastify, mongoose } from "@/assets/index";
+import { shadcn, fastify, mongoose, react_router } from "@/assets/index";
 
 const SkillsPart1 = () => {
   const languages = [
@@ -12,7 +12,6 @@ const SkillsPart1 = () => {
     { icon: "tailwind", tooltip: "Tailwind CSS" },
     { icon: "js", tooltip: "JavaScript" },
     { icon: "react", tooltip: "React" },
-    { icon: "redux", tooltip: "Redux" },
   ];
   const backendIcons = [
     { icon: "nodejs", tooltip: "Node.js" },
@@ -47,6 +46,14 @@ const SkillsPart1 = () => {
             <span>{tooltip}</span>
           </div>
         ))}
+        <div className="group relative">
+          <img
+            src={react_router}
+            alt="react-router_logo"
+            className="rounded-2xl border border-slate-400 p-1"
+          />
+          <span>React Router</span>
+        </div>
         <div className="group relative">
           <img
             src={shadcn}

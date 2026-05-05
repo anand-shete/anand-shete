@@ -5,6 +5,7 @@ import SkillsPart1 from "./SkillsPart1";
 import SkillsPart2 from "./SkillsPart2";
 import ProjectsSection from "./Projects";
 import ContactForm from "./ContactForm";
+import ContactDetails from "./ContactDetails";
 
 export {
   HeroSection,
@@ -14,4 +15,5 @@ export {
   SkillsPart2,
   ProjectsSection,
   ContactForm,
+  ContactDetails,
 };

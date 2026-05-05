@@ -8,7 +8,7 @@ export default function Games() {
       <Navbar />
       <div className="flex h-screen max-w-screen flex-row items-center justify-center">
         <motion.h1
-          className="text-center text-6xl"
+          className="text-center text-5xl font-bold text-slate-800"
           initial="hidden"
           animate="show"
           variants={{
@@ -28,11 +28,7 @@ export default function Games() {
                 hidden: { opacity: 0 },
                 show: {
                   opacity: 1,
-                  transition: {
-                    repeat: Infinity,
-                    duration: 0.5,
-                    repeatType: "mirror",
-                  },
+                  transition: { repeat: Infinity, duration: 0.5, repeatType: "mirror" },
                 },
               }}
             >

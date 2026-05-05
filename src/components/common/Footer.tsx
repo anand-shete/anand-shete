@@ -1,13 +1,10 @@
+import resume from "/Anand_Shete.pdf";
 import { Button } from "@/components/ui/button";
 import { NavLink } from "react-router";
-import { motion } from "motion/react";
 import { Download, Github } from "lucide-react";
-import resume from "/Anand_Shete.pdf";
 import { gmail, linkedin } from "@/assets/index";
 
 export default function Footer() {
-  const MotionButton = motion.create(Button); // Create an animated version of the Button compoennts
-
   return (
     <div className="flex min-h-55 max-w-screen flex-row items-center justify-evenly overflow-hidden border-t-2 bg-slate-900 text-white">
       <div className="hidden flex-col space-y-2 sm:flex">
@@ -36,25 +33,12 @@ export default function Footer() {
         </NavLink>
       </div>
       <div>
-        <MotionButton
-          className="cursor-pointer lg:mr-24"
-          size="lg"
-          initial={{ scale: 0.5 }}
-          whileInView={{ scale: 1 }}
-          transition={{
-            type: "spring",
-            stiffness: 100,
-            damping: 5,
-            repeat: 2,
-            repeatDelay: 0.5,
-          }}
-          whileHover={{ scale: 1.1 }}
-        >
+        <Button className="animate-bounce cursor-pointer lg:mr-24" size="lg">
           <a href={resume} download="Anand_Shete_Resume.pdf" className="flex">
             <Download className="mr-3" />
             Download Resume
           </a>
-        </MotionButton>
+        </Button>
       </div>
       <div className="text-md">
         <NavLink

@@ -5,6 +5,6 @@ export { default as blogify } from "./projects/blogify.png";
 export { default as metaverse } from "./projects/metaverse.png";
 export { default as fastify } from "./skills/fastify.svg";
 export { default as mongoose } from "./skills/mongoose.png";
-export { default as motionLogo } from "./skills/motion.png";
 export { default as react_router } from "./skills/react-router.svg";
 export { default as shadcn } from "./skills/shadcn.png";
+export { default as profile } from "./hero/profile.png";
