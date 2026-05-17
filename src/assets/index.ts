@@ -1,4 +1,5 @@
 export { default as change_networks } from "./experience/change_networks.jpg";
+export { default as spinx } from "./experience/spinx_club.png";
 export { default as gmail } from "./footer/gmail.svg";
 export { default as linkedin } from "./footer/linkedin.webp";
 export { default as blogify } from "./projects/blogify.png";

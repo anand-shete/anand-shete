@@ -28,7 +28,6 @@ export const FlipWords = ({
       }, duration);
   }, [isAnimating, duration, startAnimation]);
 
-  //  fixme from overflowing
   return (
     <AnimatePresence
       onExitComplete={() => {
@@ -43,7 +42,6 @@ export const FlipWords = ({
         className={cn("relative z-10 inline-block px-2 text-left text-white", className)}
         key={currentWord}
       >
-        {/* edit suggested by Sajal: https://x.com/DewanganSajal */}
         {currentWord.split(" ").map((word, wordIndex) => (
           <motion.span
             key={word + wordIndex}

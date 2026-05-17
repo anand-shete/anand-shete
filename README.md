@@ -1,6 +1,6 @@
-# Hi there 👋
+# Anand Shete
 
-I'm Anand, a <b>Full Stack Web Developer </b>.
+Backend developer focusing on scalable systems, distributed architecture, and high-performance APIs.
 
 - Checkout my [Portfolio](https://www.anandshete.dev).
 - Follow me on [LinkedIn](https://www.linkedin.com/in/anand-shete).
@@ -13,7 +13,7 @@ I'm Anand, a <b>Full Stack Web Developer </b>.
 
 ### Front-End
 
-[![My Skills](https://skillicons.dev/icons?i=html,css,tailwind,js,react,redux)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=html,css,tailwind,js,react)](https://skillicons.dev)
 
 ### Back-End
 
@@ -53,7 +53,7 @@ I'm Anand, a <b>Full Stack Web Developer </b>.
 - Built a Github Actions CD pipeline for frontend and backend
 - Optimized database queries and caching strategies for faster content delivery
 
-### [Markwise ](https://markwise.anandshete.dev/)
+### [Markwise](https://markwise.anandshete.dev/)
 
 - Built QR-based attendance system for 500+ users
 - Implemented JWT authentication and secure session handling

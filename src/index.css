@@ -115,6 +115,14 @@
   --color-sidebar-ring: var(--sidebar-ring);
 }
 
+@utility no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
 @theme {
   --shadow-custom: 0 10px 50px 0 #1e293b;
   --font-poppins: Poppins, "sans-serif";
@@ -132,7 +140,7 @@
 
 @layer base {
   * {
-    @apply border-border outline-ring/50;
+    @apply border-border outline-ring/50 no-scrollbar;
   }
   body {
     @apply bg-background text-foreground;

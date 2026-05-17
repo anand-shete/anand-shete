@@ -30,15 +30,15 @@ export default function ProjectsSection({ width }: Props) {
       </div>
 
       {/* Blogify */}
-      <div className="grid gap-y-30">
+      <div className="grid gap-y-20">
         <div className="mx-8 grid grid-cols-1 gap-x-40 md:grid-cols-2">
           <TiltedCard
             imageSrc={blogify}
             altText="Blogify"
             captionText="Blogify"
-            containerHeight={width >= 768 ? "60vh" : "60vh"}
+            containerHeight={width >= 768 ? "55vh" : "60vh"}
             containerWidth={width >= 768 ? "50vw" : "80vw"}
-            imageHeight={width >= 768 ? "60vh" : "60vh"}
+            imageHeight={width >= 768 ? "55vh" : "60vh"}
             imageWidth={width >= 768 ? "50vw" : "80vw"}
             rotateAmplitude={12}
             scaleOnHover={1.1}

@@ -21,7 +21,7 @@ const contacts = [
   {
     label: "GitHub",
     href: "https://github.com/anand-shete",
-    username: "anand-shete",
+    username: "github.com/anand-shete",
     icon: null,
     alt: "GitHub",
     description: "Code, projects, and open-source work",
@@ -41,7 +41,7 @@ const ContactDetails = () => {
             key={contact.label}
             href={contact.href}
             target={contact.href.startsWith("mailto:") ? undefined : "_blank"}
-            rel={contact.href.startsWith("mailto:") ? undefined : "noopener noreferrer"}
+            rel={contact.href.startsWith("mailto:") ? undefined : "noopener"}
             referrerPolicy={contact.href.startsWith("mailto:") ? undefined : "no-referrer"}
             className="group flex h-full flex-col rounded-2xl border border-slate-200 bg-white p-6 shadow-xl shadow-slate-200 transition-transform duration-200 hover:-translate-y-1 hover:shadow-2xl"
           >
@@ -50,8 +50,8 @@ const ContactDetails = () => {
                 {contact.icon ? (
                   <img src={contact.icon} alt={contact.alt} className="h-11 w-11 rounded-xl" />
                 ) : (
-                  <div className="flex h-11 w-16 items-center justify-center rounded-xl bg-black text-white">
-                    <Github className="" size={26} />
+                  <div className="flex items-center justify-center rounded-xl bg-black p-1">
+                    <Github color="#fff" size={32} />
                   </div>
                 )}
                 <div>
@@ -59,12 +59,9 @@ const ContactDetails = () => {
                   <p className="text-sm text-slate-500">{contact.description}</p>
                 </div>
               </div>
-              <span className="rounded-full border border-slate-200 px-4 py-2 text-xs font-medium text-slate-600 transition-colors group-hover:border-slate-900 group-hover:text-slate-900 hover:bg-emerald-300">
-                Open
-              </span>
             </div>
 
-            <p className="mt-auto text-sm font-medium text-slate-700 underline-offset-4 group-hover:underline">
+            <p className="mt-auto text-sm font-medium text-slate-600 underline-offset-4 group-hover:underline">
               {contact.username}
             </p>
           </a>

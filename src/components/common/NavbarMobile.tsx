@@ -1,19 +1,17 @@
+import resume from "/Anand_Shete.pdf";
 import { useState } from "react";
 import { Button } from "../ui/button";
 import { useNavigate } from "react-router";
-import { Download, House, Send, Menu, X, BriefcaseBusiness } from "lucide-react";
-import resume from "/Anand_Shete.pdf";
-import { useLenis } from "lenis/react";
+import { Download, House, Send, Menu, X, Github } from "lucide-react";
 
 export default function NavbarMobile() {
   const navigate = useNavigate();
-  const lenis = useLenis();
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="z-10 flex min-w-full items-center justify-around md:hidden">
+    <div className="fixed z-50 flex w-screen items-center justify-around md:hidden">
       <div
-        className={`fixed top-20 flex flex-col space-y-3 bg-slate-800 transition-transform duration-400 [&_button]:w-screen ${isOpen ? "translate-y-0" : "-translate-y-100"} `}
+        className={`fixed top-20 flex flex-col space-y-3 bg-slate-800 pb-2 transition-transform duration-300 [&_button]:w-screen ${isOpen ? "translate-y-0" : "-translate-y-100"} `}
       >
         <Button
           onClick={() => {
@@ -23,15 +21,6 @@ export default function NavbarMobile() {
         >
           <House className="" />
           Home
-        </Button>
-        <Button
-          onClick={() => {
-            lenis?.scrollTo("#projects");
-            setIsOpen(false);
-          }}
-        >
-          <BriefcaseBusiness className="" />
-          Projects
         </Button>
         <Button
           onClick={() => {
@@ -51,6 +40,23 @@ export default function NavbarMobile() {
           <a href={resume} download="Anand_Shete_Resume.pdf" className="flex px-80 py-2">
             <Download className="relative top-0.5 mr-1" />
             Resume
+          </a>
+        </Button>
+        <Button
+          onClick={() => {
+            navigate("/");
+            setIsOpen(false);
+          }}
+        >
+          <a
+            href={"https://github.com/anand-shete"}
+            target="_blank"
+            rel="noopener"
+            referrerPolicy="no-referrer"
+            className="flex px-80 py-2"
+          >
+            <Github className="relative top-0.5 mr-1" />
+            GitHub
           </a>
         </Button>
       </div>

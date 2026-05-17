@@ -32,7 +32,7 @@ export default function HeroSection({ width }: Props) {
         </h1>
         <div className="mt-2 mb-4 flex items-center gap-3 text-left md:mt-4 md:mb-6">
           <span className="text-base font-medium text-white sm:text-lg md:text-xl">I'm a</span>
-          <div className="text-xl font-semibold tracking-normal sm:text-2xl md:text-3xl">
+          <div className="text-xl font-semibold tracking-normal sm:text-2xl md:text-3xl overflow-x-auto max-w-sm">
             <FlipWords words={words} duration={3000} />
           </div>
         </div>

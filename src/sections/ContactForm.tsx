@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
@@ -19,8 +19,8 @@ export default function ContactForm() {
 
   if (state.succeeded) {
     return (
-      <div className="flex h-[80vh] max-w-screen items-center justify-center p-6 md:p-10">
-        <Card className="my-20 w-[60vw] text-center shadow-2xl transition-all hover:scale-103">
+      <div className="flex max-w-screen items-center justify-center p-6 md:p-10">
+        <Card className="w-[60vw] text-center shadow-2xl">
           <CardHeader>
             Thank you for the message. I have received it and will respond to you shortly!
           </CardHeader>
@@ -28,10 +28,11 @@ export default function ContactForm() {
       </div>
     );
   }
+
   return (
     <div className="flex max-w-screen flex-col items-center justify-center p-6 md:p-10">
       <h1 className="text-2xl font-bold text-slate-800">Contact Me</h1>
-      <p className="text-sm text-slate-600">
+      <p className="pt-2 text-sm text-slate-600">
         Have a project in mind or just want to say hi? Feel free to drop a message!
       </p>
       <Card className="mt-10 mb-20 w-[60vw] text-left shadow-lg">

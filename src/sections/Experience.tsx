@@ -1,5 +1,5 @@
 import { Timeline } from "@/components/external/timeline";
-import { change_networks } from "@/assets";
+import { change_networks, spinx } from "@/assets";
 import { Link } from "react-router";
 import { ExternalLink } from "lucide-react";
 
@@ -78,6 +78,11 @@ export default function ExperienceSection() {
               <b>payout system</b> and a more secure, personalized user experience.
             </li>
           </ul>
+          <img
+            src={spinx}
+            alt="spinx club offer letter"
+            className="mx-auto mt-4 mb-10 w-3/4 rounded-lg object-cover shadow-2xl"
+          />
         </div>
       ),
     },
